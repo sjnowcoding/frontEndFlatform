@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 나눔스퀘어글꼴 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+
+
+    <!-- 아이콘 준비 -->
+    <!-- www.flaticon.com -->
+
+
+
+    <title>Document</title>
+
+    <style>
+        body{
+            font-weight: 400;
+            font-size: 15px;
+            font-family: 'NanumSquare' , sans-serif;
+            line-height: 1.8em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            color: #3c3c3c;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul, li{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            color: #3c3c3c;
+            text-decoration: none;
+        }
+
+        .header{
+            position: relative;
+            width: 100%;
+            height: 48px;
+            padding-top: 25px;
+            color: #3c3c3c;
+            border-bottom: 1px solid #EFEFEF;
+        }
+
+        .header .logo_section{
+            position: absolute;
+            left: 30px;
+            top: 29px;
+            z-index: 5;
+            width: 105px;
+            background-color: #353535;
+        }
+
+        .header .logo_section img{
+            /* 이미지크기는 logo_section의 크기가 됩니다.  */
+            width: 100%;
+        }
+
+        .header .page_title{
+            position: absolute;
+            left: 170px;
+            padding-left: 20px;
+            border-left: 1px solid #ddd;
+            line-height: 20px;
+            margin-top: 3px;
+            color: #b1b1b1;
+        }
+
+        .header .main_menu{
+            position: absolute;
+            right:30px;
+        }
+        .header .main_menu ul li{
+            margin: 0px 15px;
+            cursor: pointer;
+            display:inline-block;
+        }
+
+        .header .main_menu ul li .login_menu{
+            border-left: 1px solid #ddd;
+            padding-left: 30px;
+        }
+
+        .filter_section{
+            position: relative;
+            height: 53px;
+            display: flex;
+            border-bottom: 1px solid #EFEFEF;
+            background-color: #ffffff;
+        }
+
+        .filter_section .filter_deco{
+            width: 53px;
+            height: 53px;
+            display: flex;
+            align-content: center;
+            justify-content:center;
+            border-right: 1px solid #EFEFEF;
+        }
+
+        .filter_section .filter_item{
+            width:110px;
+            line-height: 53px;
+            font-size:14px;
+            border-right: 1px solid #efefef;
+            font-weight:700;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .filter_section .filter_item img{
+            width: 10%; /* 화살표의 크기 조정 */
+            margin-left: 7px;
+            margin-top: -2px;
+            vertical-align: middle;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo_section"><img src="./img/logo.svg"/></div>
+        <div class="page_title">메이트모집</div>
+        <div class="main_menu">
+            <ul>
+                <li>   메이트찾기   </li>
+                <li>메이트 모집</li>
+                <li>메이트지원사업</li>
+                <li>교육 및 행사</li>
+                <li>스타트업툴</li>
+                <li>매거진</li>
+                <li class="login_menu">로그인/회원가입</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="contents_wrap">
+        <div class="filter_section">
+            /* flaticon.com 에서 다운로드 받기 */
+            <div class="filter_deco"><img src="./img/ic_filter.png"/></div>
+            <div class="filter_item">지역<img src="./img/ic_arrow_down.png"/></div>
+            <div class="filter_item">직무<img src="./img/ic_arrow_down.png"/></div>
+            <div class="filter_item">경력<img src="./img/ic_arrow_down.png"/></div>
+           
+        </div>
+
+    </div>
+    
+</body>
+</html>
